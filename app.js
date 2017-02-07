@@ -7,8 +7,5 @@ var server = http.createServer(function (request, response) {
   response.end("Hello World\n");
 });
 
-// Listen on port 8000, IP defaults to 127.0.0.1
+// Listen on the port azure will point to
 server.listen(process.env.port);
-
-// Put a friendly message on the terminal
-console.log("Server running at http://127.0.0.1:8000/");
